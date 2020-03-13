@@ -35,3 +35,18 @@ cacheSolve <- function(x, ...) {
         x$setSolve(s)
         s
 }
+
+## Some testing
+
+## > b <- matrix(1:4, nrow = 2, ncol = 2)
+## > c <- makeCacheMatrix(b)
+## > cacheSolve(c)
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+## > cacheSolve(c)
+## getting cached data
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+
